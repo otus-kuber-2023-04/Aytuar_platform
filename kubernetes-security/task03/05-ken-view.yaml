@@ -6,9 +6,9 @@ metadata:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: role-view
+  name: view
 subjects:
   - kind: ServiceAccount
     name: ken
     namespace: dev
-# kubectl create rolebinding rolebind-ken-view --clusterrole=role-view --namespace=dev --serviceaccount=dev:ken
+# kubectl create rolebinding rolebind-ken-view --clusterrole=view --namespace=dev --serviceaccount=dev:ken
