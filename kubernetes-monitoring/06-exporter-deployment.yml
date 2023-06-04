@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx-exporter
-          image: nginx/nginx-prometheus-exporter
+          image: nginx/nginx-prometheus-exporter:0.11
           env:
             - name: SCRAPE_URI
               value: "http://nginx:8080/basic_status"
